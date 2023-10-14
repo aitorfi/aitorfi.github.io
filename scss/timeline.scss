@@ -61,6 +61,46 @@
 	position: relative;
 	width: 500px;
 	height: 8px;
+	margin-left: 8px;
+
+	.connector-decorator {
+		position: relative;
+		background-color: transparent;
+		height: 20px;
+		width: 8px;
+	}
+
+	.border-bottom-left {
+		@extend .connector-decorator;
+		top: -12px;
+		border-top-left-radius: 8px;
+	}
+
+	.border-bottom-left-studies {
+		@extend .border-bottom-left;
+		box-shadow: 0 -8px 0 0 #F2A950;
+	}
+
+	.border-bottom-left-job {
+		@extend .border-bottom-left;
+		box-shadow: 0 -8px 0 0 #0DB3D9;
+	}
+
+	.border-top-left {
+		@extend .connector-decorator;
+		top: -20px;
+		border-bottom-left-radius: 8px;
+	}
+
+	.border-top-left-studies {
+		@extend .border-top-left;
+		box-shadow: 0 8px 0 0 #F2A950;
+	}
+
+	.border-top-left-job {
+		@extend .border-top-left;
+		box-shadow: 0 8px 0 0 #0DB3D9;
+	}
 }
 
 .timeline-item-card {
