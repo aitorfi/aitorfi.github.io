@@ -48,6 +48,7 @@ function createTimeMilestone() {
 
 	timeMilestone = document.createElement('div');
 	timeMilestone.classList.add('time-milestone');
+	timeMilestone.classList.add('row');
 	timeMilestoneIndicator = document.createElement('span');
 	timeMilestoneIndicator.classList.add('time-milestone-indicator');
 	timeMilestone.appendChild(timeMilestoneIndicator);

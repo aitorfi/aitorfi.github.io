@@ -1,0 +1,107 @@
+.time-milestone {
+	height: 14px;
+	align-items: center;
+	justify-content: right;
+	margin-left: auto;
+	font-size: .8rem;
+	
+	img {
+		width: 24px;
+		height: 24px;
+		margin-top: -20px;
+		margin-right: 10px;
+	}
+
+	.time-milestone-indicator {
+		display: block;
+		width: 15px;
+		height: 2px;
+		margin-left: 5px;
+		background-color: gray;
+		border-top-left-radius: 2px;
+		border-bottom-left-radius: 2px;
+	}
+}
+
+.time-milestone-big {
+	@extend .time-milestone;
+	font-size: 1rem;
+
+	.time-milestone-indicator {
+		width: 25px;
+	}
+}
+
+.v-timeline {
+	width: 4px;
+	margin: -4px 0 -4px 0;
+	background-color: gray;
+	border-radius: 4px;
+}
+
+.timeline-item {
+	width: 8px;
+	margin-left: 10px;
+	border-radius: 4px;
+}
+
+.timeline-item.job,
+.timeline-item-connector.job,
+.timeline-item-card.job {
+	background-color: #0DB3D9;
+}
+
+.timeline-item.studies,
+.timeline-item-connector.studies,
+.timeline-item-card.studies {
+	background-color: #F2A950;
+}
+
+.timeline-item-connector {
+	position: relative;
+	width: 500px;
+	height: 8px;
+}
+
+.timeline-item-card {
+	position: relative;
+	width: 450px;
+	padding: 15px;
+	color: #fff;
+	border-radius: 15px;
+
+	h4 {
+		margin-top: -5px;
+	}
+
+	img {
+		margin-right: 15px;
+		padding: 4px;
+	}
+}
+
+#tsk {
+	margin-top: 118px; // 6px + (<num. of months> * <.time-milestone height>)
+	margin-bottom: 90px;
+}
+
+#tsk-connector {
+	top: 28px;
+}
+
+#tsk-card {
+	left: 500px;
+}
+
+#tartanga-dam {
+	margin-top: 426px; // 6px + (<num. of months> * <.time-milestone height>)
+	margin-bottom: 34px;
+}
+
+#tartanga-dam-connector {
+	top: 28px;
+}
+
+#tartanga-dam-card {
+	left: 480px;
+}
