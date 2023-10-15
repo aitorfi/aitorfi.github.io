@@ -23,6 +23,7 @@ function initTimeline() {
 			hTimeline.appendChild(createTimeMilestone());
 		limits.endDate.setMonth(month - 1);	
 	}
+	document.dispatchEvent(new CustomEvent("OnTimelineStructureInitialized", {}));
 }
 
 function getTimelineDateLimits() {
