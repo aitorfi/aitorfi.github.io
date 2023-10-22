@@ -78,3 +78,8 @@ main {
 	display: flex;
 	flex-direction: column;
 }
+
+.col2 {
+	@extend .col;
+	width: 50%;
+}

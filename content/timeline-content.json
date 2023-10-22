@@ -1,16 +1,43 @@
 {
-	"timelineItems": [
+	"#career-timeline": [
 		{
-			"title": "Software Developer",
-			"subtitle": "At TSK Electr&oacute;nica y Electricidad S.A.",
-			"startDate": "2023-01-01",
+			"type": "job",
+			"title": "Software Engineer",
+			"subtitle": "At TSK Electrónica y Electricidad S.A.",
+			"img": "icons/briefcase-white.svg",
+			"imgAlt": "A white briefcase symbolizing job experience.",
+			"startDate": "2021-03-01",
+			"description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. In ultricies metus a est pharetra molestie. Curabitur pellentesque est ut nibh sollicitudin pharetra. Sed tempor commodo purus ut pharetra. Duis sollicitudin efficitur mattis. Morbi tempus at ante non dictum."
+		}
+	],
+	"#studies-timeline": [
+		{
+			"type": "studies",
+			"title": "Software Engineering",
+			"subtitle": "At 42 Urduliz",
+			"img": "icons/graduation-hat-white.svg",
+			"imgAlt": "A white graduation hat symbolizing studies.",
+			"startDate": "2023-06-01",
 			"description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. In ultricies metus a est pharetra molestie. Curabitur pellentesque est ut nibh sollicitudin pharetra. Sed tempor commodo purus ut pharetra. Duis sollicitudin efficitur mattis. Morbi tempus at ante non dictum."
 		},
 		{
+			"type": "studies",
+			"title": "Web Application Development",
+			"subtitle": "At Birt LH",
+			"img": "icons/graduation-hat-white.svg",
+			"imgAlt": "A white graduation hat symbolizing studies.",
+			"startDate": "2021-09-01",
+			"endDate": "2023-03-01",
+			"description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. In ultricies metus a est pharetra molestie. Curabitur pellentesque est ut nibh sollicitudin pharetra. Sed tempor commodo purus ut pharetra. Duis sollicitudin efficitur mattis. Morbi tempus at ante non dictum."
+		},
+		{
+			"type": "studies",
 			"title": "Cross-Platform Application Development",
 			"subtitle": "At Tartanga CIFP",
-			"startDate": "2021-01-01",
-			"endDate": "2022-02-01",
+			"img": "icons/graduation-hat-white.svg",
+			"imgAlt": "A white graduation hat symbolizing studies.",
+			"startDate": "2019-09-01",
+			"endDate": "2021-06-01",
 			"description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. In ultricies metus a est pharetra molestie. Curabitur pellentesque est ut nibh sollicitudin pharetra. Sed tempor commodo purus ut pharetra. Duis sollicitudin efficitur mattis. Morbi tempus at ante non dictum."
 		}
 	]

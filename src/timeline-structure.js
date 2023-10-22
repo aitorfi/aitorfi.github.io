@@ -2,11 +2,11 @@
 
 import { getTimelineDateLimits } from './timeline-utils.js';
 
-export function initTimelineStructure() {
+export function initTimelineStructure(timelineId) {
 	var hTimeline;
 	var limits;
 
-	hTimeline = document.querySelector('.h-timeline');
+	hTimeline = document.querySelector(timelineId + " > .h-timeline");
 	limits = getTimelineDateLimits();
 	while (!sameYearAndMonth(limits.bottomDate, limits.topDate))
 	{

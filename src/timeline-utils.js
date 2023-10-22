@@ -32,13 +32,14 @@ export function getDateDiffInMonths(date1, date2)
 	return (months);
 }
 
-export async function getTimelineContent() {
-	var timelineItems = Array.from(
+export async function getTimelineContent(timelineId) {
+	var timelineItems;
+	
+	timelineItems = Array.from(
 		await fetch("./content/timeline-content.json")
 			.then((response) => response.json())
-			.then((json) => json.timelineItems)
+			.then((json) => json[timelineId])
 	);
-		
 	timelineItems.sort((a, b) => {
 		let aDate = (a.endDate === undefined) ? new Date() : new Date(a.endDate);
 		let bDate = (b.endDate === undefined) ? new Date() : new Date(b.endDate);
