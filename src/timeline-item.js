@@ -77,7 +77,7 @@ function createTimelineItem(timelineItemDimensions, itemData) {
 	expandedMarker.src = "../img/icons/arrow-down-fill-white.svg";
 	expandedMarker.alt = "Expanded container indicator.";
 	cardParagraph = document.createElement('p');
-	cardParagraph.textContent = itemData.description;
+	cardParagraph.innerHTML = itemData.description;
 	col.appendChild(cardTitle);
 	col.appendChild(cardSubtitle);
 	row.appendChild(cardImg);

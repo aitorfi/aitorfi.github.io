@@ -7,7 +7,7 @@
 			"img": "icons/briefcase-white.svg",
 			"imgAlt": "A white briefcase symbolizing job experience.",
 			"startDate": "2021-03-01",
-			"description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. In ultricies metus a est pharetra molestie. Curabitur pellentesque est ut nibh sollicitudin pharetra. Sed tempor commodo purus ut pharetra. Duis sollicitudin efficitur mattis. Morbi tempus at ante non dictum."
+			"description": "<ul><li>Power BI report design.</li><li>DataWarehouse development with SQL Server.</li><li>Error detection and resolution in Dynamics AX 2012.</li><li>Feature analysis and development in Dynamics AX 2012.</li><li>Code migration from AX 2012 to Dynamics 365 F&O.</li><li>Functional requirement collection.</li></ul>"
 		}
 	],
 	"#studies-timeline": [
@@ -18,7 +18,7 @@
 			"img": "icons/graduation-hat-white.svg",
 			"imgAlt": "A white graduation hat symbolizing studies.",
 			"startDate": "2023-06-01",
-			"description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. In ultricies metus a est pharetra molestie. Curabitur pellentesque est ut nibh sollicitudin pharetra. Sed tempor commodo purus ut pharetra. Duis sollicitudin efficitur mattis. Morbi tempus at ante non dictum."
+			"description": "<ul><li>C programming language.</li><li>Bash scripting and Linux OS administration.</li></ul>"
 		},
 		{
 			"type": "studies",
@@ -28,7 +28,7 @@
 			"imgAlt": "A white graduation hat symbolizing studies.",
 			"startDate": "2021-09-01",
 			"endDate": "2023-03-01",
-			"description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. In ultricies metus a est pharetra molestie. Curabitur pellentesque est ut nibh sollicitudin pharetra. Sed tempor commodo purus ut pharetra. Duis sollicitudin efficitur mattis. Morbi tempus at ante non dictum."
+			"description": "<ul><li>Frontend development with Angular.</li><li>Backend development with Laravel (PHP) and Spring Boot (Java).</li><li>Application deployment with Docker, Apache (httpd) and Tomcat.</li></ul>"
 		},
 		{
 			"type": "studies",
@@ -38,7 +38,7 @@
 			"imgAlt": "A white graduation hat symbolizing studies.",
 			"startDate": "2019-09-01",
 			"endDate": "2021-06-01",
-			"description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. In ultricies metus a est pharetra molestie. Curabitur pellentesque est ut nibh sollicitudin pharetra. Sed tempor commodo purus ut pharetra. Duis sollicitudin efficitur mattis. Morbi tempus at ante non dictum."
+			"description": "<ul><li>Mobile and desktop application development with Java.</li><li>REST API development with Java.</li><li>Database administration with MySQL.</li><li>Linux operating systems administration.</li></ul>"
 		}
 	]
 }
