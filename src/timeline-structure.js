@@ -1,6 +1,7 @@
 'use strict';
 
 import { getTimelineDateLimits } from './timeline-utils.js';
+import *  as structureGUIBuilder from './timeline-structure-gui-builder.js';
 
 export function initTimelineStructure(timelineId) {
 	var hTimeline;
@@ -32,20 +33,19 @@ function createTimeMilestone() {
 	var timeMilestone;
 	var timeMilestoneIndicator;
 
-	timeMilestone = document.createElement('div');
-	timeMilestone.classList.add('time-milestone', 'row');
-	timeMilestoneIndicator = document.createElement('span');
-	timeMilestoneIndicator.classList.add('time-milestone-indicator');
+	timeMilestone = structureGUIBuilder.newTimeMilestone();
+	timeMilestoneIndicator = structureGUIBuilder.newTimeMilestoneIndicator();
 	timeMilestone.appendChild(timeMilestoneIndicator);
 	return (timeMilestone);
 }
 
 function createTimeMilestoneBig() {
 	var timeMilestoneBig;
+	var timeMilestoneIndicator;
 
-	timeMilestoneBig = createTimeMilestone();
-	timeMilestoneBig.classList.remove('time-milestone');
-	timeMilestoneBig.classList.add('time-milestone-big');
+	timeMilestoneBig = structureGUIBuilder.newTimeMilestoneBig();
+	timeMilestoneIndicator = structureGUIBuilder.newTimeMilestoneIndicator();
+	timeMilestoneBig.appendChild(timeMilestoneIndicator);
 	return (timeMilestoneBig);
 }
 
@@ -55,13 +55,10 @@ function createTimeMilestoneBigForYear(year) {
 	var timeMilestoneBigYear;
 
 	timeMilestoneBig = createTimeMilestoneBig();
-	timeMilestoneBigImg = document.createElement('img');
-	timeMilestoneBigImg.src = "./img/icons/arrow-90deg-up-black.svg";
-	timeMilestoneBigImg.alt = "Arrow pointing upwards.";
+	timeMilestoneBigImg = structureGUIBuilder.newTimeMilestoneBigImage();
 	timeMilestoneBig.insertBefore(
 		timeMilestoneBigImg, timeMilestoneBig.childNodes[0]);
-	timeMilestoneBigYear = document.createElement('span');
-	timeMilestoneBigYear.innerHTML = year;
+	timeMilestoneBigYear = structureGUIBuilder.newTimeMilestoneBigYear(year);
 	timeMilestoneBig.insertBefore(
 		timeMilestoneBigYear, timeMilestoneBig.childNodes[1]);
 	return (timeMilestoneBig);

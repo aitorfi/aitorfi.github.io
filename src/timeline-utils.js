@@ -16,8 +16,7 @@ export function getTopDate() {
 	return (topDate);
 }
 
-export function getDateDiffInMonths(date1, date2)
-{
+export function getDateDiffInMonths(date1, date2) {
 	var months;
 
 	months = Math.abs((date1.getFullYear() - date2.getFullYear()) * 12);
@@ -30,22 +29,6 @@ export function getDateDiffInMonths(date1, date2)
 		months += date1.getMonth();
 	}
 	return (months);
-}
-
-export async function getTimelineContent(timelineId) {
-	var timelineItems;
-	
-	timelineItems = Array.from(
-		await fetch("./content/timeline-content.json")
-			.then((response) => response.json())
-			.then((json) => json[timelineId])
-	);
-	timelineItems.sort((a, b) => {
-		let aDate = (a.endDate === undefined) ? new Date() : new Date(a.endDate);
-		let bDate = (b.endDate === undefined) ? new Date() : new Date(b.endDate);
-		return (bDate.getTime() - aDate.getTime());
-	});
-	return (timelineItems);
 }
 
 export function getMilestoneDimensions() {
