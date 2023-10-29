@@ -1,9 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
 	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1"/>
 		<title>Aitor Fidalgo</title>
-		<link rel="stylesheet" href="./css/styles.min.css">
-		<link rel="stylesheet" href="./css/timeline.min.css">
+		<link rel="stylesheet" href="./css/styles.min.css"/>
+		<link rel="stylesheet" href="./css/timeline.min.css"/>
 		<script src="./src/timeline.js" type="module"></script>
 	</head>
 	<body>
@@ -13,7 +14,7 @@
 				<div class="title col">
 					<h1>Aitor Fidalgo</h1>
 					<h2>Software Engineer</h2>
-					<div class="centered-row">
+					<div class="cv-download-buttons-wrapper">
 						<a class="download-button" href="./content/cv-english.pdf" download="CV - Aitor Fidalgo Sanchez (EN)">
 							<img src="./img/icons/download-black.svg" alt="Download icon"/>
 							Download CV (English)
@@ -35,28 +36,26 @@
 			</div>
 		</header>
 		<main>
-			<section>
-				<div class="content-wrapper">
-					<div class="row">
-						<div class="col2">
-							<h2>Career Timeline</h2>
-							<div class="row" id="career-timeline">
-								<div class="h-timeline"></div>
-								<div class="v-timeline"></div>
-								<div class="timeline-item-container col"></div>
-							</div>
+			<div class="content-wrapper">
+				<section class="timeline-section">
+					<div class="timeline-wrapper">
+						<h2>Career Timeline</h2>
+						<div class="timeline" id="career-timeline">
+							<div class="h-timeline"></div>
+							<div class="v-timeline"></div>
+							<div class="timeline-item-container col"></div>
 						</div>
-						<div class="col2">
-							<h2>Studies Timeline</h2>
-							<div class="row" id="studies-timeline">
-								<div class="h-timeline"></div>
-								<div class="v-timeline"></div>
-								<div class="timeline-item-container col"></div>
-							</div>
-						</div>	
 					</div>
-				</div>
-			</section>
+					<div class="timeline-wrapper">
+						<h2>Studies Timeline</h2>
+						<div class="timeline" id="studies-timeline">
+							<div class="h-timeline"></div>
+							<div class="v-timeline"></div>
+							<div class="timeline-item-container col"></div>
+						</div>
+					</div>	
+				</section>
+			</div>
 		</main>
 		<footer>
 			<div class="content-wrapper space-around-row">

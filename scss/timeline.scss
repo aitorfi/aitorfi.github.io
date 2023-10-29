@@ -1,3 +1,8 @@
+.timeline {
+	display: flex;
+	flex-direction: row;
+}
+
 .time-milestone {
 	height: 14px;
 	align-items: center;
@@ -66,7 +71,7 @@
 
 .timeline-item-card {
 	position: relative;
-	width: 520px;
+	width: 440px;
 	top: -33px;
 	left: 75px; // Same as connector width
 	padding: 14px;
