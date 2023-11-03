@@ -3,7 +3,7 @@
 		{
 			"type": "job",
 			"title": "Software Engineer",
-			"subtitle": "At TSK Electrónica y Electricidad S.A.",
+			"subtitle": "At Grupo TSK",
 			"img": "icons/briefcase-white.svg",
 			"imgAlt": "A white briefcase symbolizing job experience.",
 			"startDate": "2021-03-01",
@@ -22,7 +22,7 @@
 		},
 		{
 			"type": "studies",
-			"title": "Web Application Development",
+			"title": "Web App Development",
 			"subtitle": "At Birt LH",
 			"img": "icons/graduation-hat-white.svg",
 			"imgAlt": "A white graduation hat symbolizing studies.",
@@ -32,8 +32,8 @@
 		},
 		{
 			"type": "studies",
-			"title": "Cross-Platform Application Development",
-			"subtitle": "At Tartanga CIFP",
+			"title": "Cross Platform App Development",
+			"subtitle": "At CIFP Tartanga",
 			"img": "icons/graduation-hat-white.svg",
 			"imgAlt": "A white graduation hat symbolizing studies.",
 			"startDate": "2019-09-01",
