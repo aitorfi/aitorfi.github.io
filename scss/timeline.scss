@@ -44,6 +44,11 @@
 	border-radius: 4px;
 }
 
+.timeline-item-container {
+	display: flex;
+	flex-direction: column;
+}
+
 .timeline-item {
 	width: 8px;
 	margin-left: 10px;
@@ -78,12 +83,11 @@
 	color: #fff;
 	border-radius: 15px;
 
-	h4 {
-		margin-top: -5px;
-	}
+	h3 { line-height: 20px; }
 
 	img {
-		width: 32px;
+		min-width: 32px;
+		max-width: 32px;
 		margin-right: 15px;
 		padding: 4px;
 	}
@@ -102,4 +106,14 @@
 		.summary-marker-expanded { display: block; }
 		.summary-marker-collapsed { display: none; }
 	}
+}
+
+.row {
+	display: flex;
+	flex-direction: row;
+}
+
+.col {
+	display: flex;
+	flex-direction: column;
 }
