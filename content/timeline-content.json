@@ -18,7 +18,7 @@
 			"img": "icons/graduation-hat-white.svg",
 			"imgAlt": "A white graduation hat symbolizing studies.",
 			"startDate": "2023-06-01",
-			"description": "<ul><li>C programming language.</li><li>Bash scripting and Linux OS administration.</li></ul>"
+			"description": "<ul><li>Microservices development with Django (python).</li><li>C/C++ programming language.</li><li>Bash scripting and Linux OS administration.</li></ul>"
 		},
 		{
 			"type": "studies",
