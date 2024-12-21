@@ -96,6 +96,10 @@ footer {
 	}
 }
 
+main section {
+	margin-bottom: 5rem;
+}
+
 .content-wrapper {
 	max-width: 1700px;
 	margin: 0 auto;
@@ -126,7 +130,7 @@ footer {
 	}
 }
 
-.timeline-section {
+#timeline-section {
 	display: flex;
 	flex-direction: row;
 
@@ -137,8 +141,49 @@ footer {
 	}
 }
 
+.project-gallery {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-evenly;
+
+	.project-gallery-item {
+		width: 300px;
+		border-radius: 10px;
+		padding: 10px;
+
+		img {
+			max-width: 100%;
+			border-radius: 10px;
+			margin-bottom: 10px;
+		}
+
+		.project-label-container {
+			display: flex;
+			flex-direction: row;
+			flex-wrap: wrap;
+			margin: 15px 0px;
+
+			.project-label {
+				color: #FFF;
+				padding: 10px 15px;
+				margin: 0px 5px 5px 5px;
+				border-radius: 25px;
+			}
+
+			.project-label.blue {
+				background-color: #0db3d9;
+			}
+
+			.project-label.orange {
+				background-color: #F2A950;
+			}
+		}
+	}
+}
+
 @media screen and (max-width: 1600px) {
-	.timeline-section {
+	#timeline-section {
 		flex-direction: column;
 
 		.timeline-wrapper {
@@ -171,7 +216,7 @@ footer {
 		}
 	}
 
-	.timeline-section .timeline-wrapper .timeline {
+	#timeline-section .timeline-wrapper .timeline {
 		.timeline-item-connector {
 			width: 300px;
 
@@ -204,7 +249,7 @@ footer {
 		}
 	}
 
-	.timeline-section .timeline-wrapper {
+	#timeline-section .timeline-wrapper {
 		.timeline {
 			margin: 0px;
 
@@ -229,7 +274,7 @@ footer {
 		}
 	}
 
-	.timeline-section .timeline-wrapper .timeline {
+	#timeline-section .timeline-wrapper .timeline {
 		.timeline-item-connector {
 			width: 50px;
 
@@ -257,7 +302,7 @@ footer {
 @media screen and (max-width: 700px) {
 	header .cv-download-buttons-wrapper { flex-direction: column; }
 
-	.timeline-section .timeline-wrapper .timeline .timeline-item-connector {
+	#timeline-section .timeline-wrapper .timeline .timeline-item-connector {
 		.timeline-item-card {
 			width: 55vw;
 
@@ -291,7 +336,7 @@ footer {
 		}
 	}
 
-	.timeline-section .timeline-wrapper .timeline {
+	#timeline-section .timeline-wrapper .timeline {
 		.timeline-item-connector {
 			width: 25px;
 
@@ -312,7 +357,7 @@ footer {
 		img { width: 20px; }
 	}
 
-	.timeline-section .timeline-wrapper .timeline .timeline-item-connector {
+	#timeline-section .timeline-wrapper .timeline .timeline-item-connector {
 		.timeline-item-card {
 			width: 50vw;
 			padding: 12px;
@@ -333,7 +378,7 @@ footer {
 	.download-button { font-size: 1rem; }
 	.social-media-button img { width: 32px; }
 
-	.timeline-section .timeline-wrapper .timeline .timeline-item-connector {
+	#timeline-section .timeline-wrapper .timeline .timeline-item-connector {
 		.timeline-item-card {
 			width: 47vw;
 		}
