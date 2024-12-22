@@ -8,7 +8,7 @@
 		<script src="./src/timeline.js" type="module"></script>
 	</head>
 	<body>
-		<header>
+		<header id="homepage-header">
 			<div class="content-wrapper">
 				<img class="profile-img" src="./img/profile.jpeg"/>
 				<div class="title">
@@ -25,10 +25,10 @@
 						</a>
 					</div>
 					<div class="social-media-wrapper">
-						<a class="social-media-button" href="https://linkedin.com/in/aitorfidalgo">
+						<a class="social-media-button" target="_blank" href="https://linkedin.com/in/aitorfidalgo">
 							<img src="./img/icons/linkedin-white.svg"/>
 						</a>
-						<a class="social-media-button" href="https://github.com/aitorfi">
+						<a class="social-media-button" target="_blank" href="https://github.com/aitorfi">
 							<img src="./img/icons/github-white.svg"/>
 						</a>
 					</div>
@@ -56,52 +56,91 @@
 					</div>	
 				</section>
 				<section id="projects-section">
-					<h2>Side Projects</h2>
+					<h2 id="side-projects">Side Projects</h2>
 					<div class="project-gallery">
 						<article class="project-gallery-item">
-							<img src="./img/turn-based-combat-game-preview.png"/>
-							<h3>Turn Based Combat Game</h3>
-							<div class="project-label-container">
-								<span class="project-label blue">JavaScript</span>
-								<span class="project-label orange">Game Development</span>
-							</div>
-							<p>A game demo where you control a characters that can move though the overworld and enter turn based combats by interacting with non playable characters.</p>
+							<a href="./turn-based-combat-game.html">
+								<div>
+									<img src="./img/turn-based-combat-game-preview.png"/>
+									<h3>Turn Based Combat Game</h3>
+									<div class="label-container">
+										<span class="label blue">JavaScript</span>
+										<span class="label orange">Game Development</span>
+									</div>
+									<p>
+										A game demo where you control a characters that can
+										move though the overworld and enter turn based combats
+										by interacting with non playable characters.
+									</p>
+								</div>
+							</a>
 						</article>
 						<article class="project-gallery-item">
-							<img src="./img/tic-tac-toe-game-preview.png"/>
-							<h3>Tic Tac Toe Game With AI</h3>
-							<div class="project-label-container">
-								<span class="project-label blue">JavaScript</span>
-								<span class="project-label orange">AI Algorithms</span>
-							</div>
-							<p>An unbeatable tic tac toe game that uses the minimax algorithm to calculate the best next move.</p>
+							<a href="./tic.tac-toe-game.html">
+								<div>
+									<img src="./img/tic-tac-toe-game-preview.png"/>
+									<h3>Tic Tac Toe Game With AI</h3>
+									<div class="label-container">
+										<span class="label blue">JavaScript</span>
+										<span class="label orange">AI Algorithms</span>
+									</div>
+									<p>
+										An unbeatable tic tac toe game that uses the minimax
+										algorithm to calculate the best next move.
+									</p>
+								</div>
+							</a>
 						</article>
 						<article class="project-gallery-item">
-							<img src="./img/ray-caster-preview.png"/>
-							<h3>Ray Caster</h3>
-							<div class="project-label-container">
-								<span class="project-label blue">C/C++</span>
-								<span class="project-label orange">Graphics</span>
-							</div>
-							<p>A ray caster that displays a maze with different textures on the walls. You are allowed to move freely in a map with similar esthetics to the old Wolfenstein 3D game.</p>
+							<a href="./ray-caster.html">
+								<div>
+									<img src="./img/ray-caster-preview.png"/>
+									<h3>Ray Caster</h3>
+									<div class="label-container">
+										<span class="label blue">C/C++</span>
+										<span class="label orange">Graphics</span>
+									</div>
+									<p>
+										A ray caster that displays a maze with different textures
+										on the walls. You are allowed to move freely in a map with
+										similar esthetics to the old Wolfenstein 3D game.
+									</p>
+								</div>
+							</a>
+						</article>
+						<article class="project-gallery-item" onclick="">
+							<a href="./web-server.html">
+								<div>
+									<img src="./img/web-server/web-server-preview.png"/>
+									<h3>Web Server</h3>
+									<div class="label-container">
+										<span class="label blue">C/C++</span>
+										<span class="label orange">Low Level Programming</span>
+									</div>
+									<p>
+										A web server that handles GET, POST and DELETE HTTP requests
+										in a similar way to Nginx. The server can serve static resources
+										and execute CGI scripts.
+									</p>
+								</div>
+							</a>
 						</article>
 						<article class="project-gallery-item">
-							<img src="./img/web-server-preview.png"/>
-							<h3>Web Server</h3>
-							<div class="project-label-container">
-								<span class="project-label blue">C/C++</span>
-								<span class="project-label orange">Low Level Programming</span>
-							</div>
-							<p>A web server that handles GET, POST and DELETE HTTP requests in a similar way to Nginx. The server can serve static resources and execute CGI scripts.</p>
-						</article>
-						<article class="project-gallery-item">
-							<img src="./img/command-line-interpreter-preview.png"/>
-							<h3>Command Line Interpreter</h3>
-							<div class="project-label-container">
-								<span class="project-label blue">C/C++</span>
-								<span class="project-label orange">Low Level Programming</span>
-							</div>
-							<p>A command line interpreter that works in a similar way to bash. Minishell allows you to execute any command in your Linux system and provides a few built in utilities.</p>
+							<a href="./command-line-interpreter.html">
+								<div>
+									<img src="./img/command-line-interpreter-preview.png"/>
+									<h3>Command Line Interpreter</h3>
+									<div class="label-container">
+										<span class="label blue">C/C++</span>
+										<span class="label orange">Low Level Programming</span>
+									</div>
+									<p>
+										A command line interpreter that works in a similar way to bash.
+										Minishell allows you to execute any command in your Linux system
+										and provides a few built in utilities.
+									</p>
+								</div>
+							</a>
 						</article>
 					</div>
 				</section>
@@ -113,19 +152,19 @@
 					<h2>Contact Information</h2>
 					<div class="contact-info-wrapper">
 						<img src="./img/icons/telephone-white.svg" alt="Telephone icon"/>
-						<a href="tel:+34633879330">+34 633 879 330</a>
+						<a target="_blank" href="tel:+34633879330">+34 633 879 330</a>
 					</div>
 					<div class="contact-info-wrapper">
 						<img src="./img/icons/envelope-white.svg" alt="Email icon"/>
-						<a href="mailto:aitorfidalgo@gmail.com">aitorfidalgo@gmail.com</a>
+						<a target="_blank" href="mailto:aitorfidalgo@gmail.com">aitorfidalgo@gmail.com</a>
 					</div>
 					<div class="contact-info-wrapper">
 						<img src="./img/icons/linkedin-white.svg" alt="LinkedIn icon"/>
-						<a href="https://linkedin.com/in/aitorfidalgo">linkedin.com/in/aitorfidalgo</a>
+						<a target="_blank" href="https://linkedin.com/in/aitorfidalgo">linkedin.com/in/aitorfidalgo</a>
 					</div>
 					<div class="contact-info-wrapper">
 						<img src="./img/icons/github-white.svg" alt="GitHub icon"/>
-						<a href="https://github.com/aitorfi">github.com/aitorfi</a>
+						<a target="_blank" href="https://github.com/aitorfi">github.com/aitorfi</a>
 					</div>
 				</section>
 				<img class="profile-img" src="./img/profile.jpeg"/>

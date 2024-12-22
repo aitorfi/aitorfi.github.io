@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+		<title>Aitor Fidalgo | Web Server</title>
+		<link rel="stylesheet" href="./css/styles.min.css"/>
+    <link rel="stylesheet" href="./css/projects.min.css"/>
+  </head>
+  <body>
+    <header>
+      <div class="content-wrapper">
+        <h1>Web Server</h1>
+        <section class="project-buttons">
+          <a class="github-button" target="_blank" href="https://github.com/aitorfi/42_webserver">
+            <div>
+              <img src="./img/icons/github-white.svg"/>
+              <span>GitHub Repository</span>
+            </div>
+          </a>
+          <a href="./index.html#side-projects">
+            <div>
+              <img src="./img/icons/arrow-left.svg"/>
+              <span>More Projects</span>
+            </div>
+          </a>
+        </section>
+      </div>
+		</header>
+    <main>
+      <div class="content-wrapper">
+        <h2 id="introduction">Introduction</h2>
+        <p>
+          I developed this project as part of the
+          <a target="_blank" href="https://www.42network.org/">42 Network</a> curriculum.
+          It consists in a simple web server that handles GET, POST and DELETE
+          HTTP requests in a similar way to Nginx. The server can serve a full
+          static website and execute CGI scripts in any programming language. A configuration
+          file must be provided when running the program where several aspects of the
+          server can be tweaked, some examples are server root directory, index file,
+          error pages, allowed methods, autoindex and file upload location.
+        </p>
+        <p>
+          This project was developed in C++ using a strong object oriented programming
+          approach. I implemented a couple of very popular design patters like
+          <a target="_blank" href="https://en.wikipedia.org/wiki/Factory_method_pattern">Factory classes</a>
+          and <a target="_blank" href="https://en.wikipedia.org/wiki/Singleton_pattern">Singleton Factory pattern</a>.
+        </p>
+        <h2 id="architecture">Architecture</h2>
+        <p>
+          Here is a class diagram that describes how I used inheritance and the 
+          Factory pattern to create a layer separation between the Server class and
+          the handling of requests that is performed by the RequestHandlerGet,
+          RequestHandlerPost and RequestHandlerDelete classes. By implementing this design pattern
+          the Server class has no knowledge of how a request is handled, it doesn't event need to know
+          the HTTP method of the request because the RequestHandlerFactory class handles the logic
+          of returning the appropriate RequestHandler implementation after inspecting the request:
+        </p>
+        <img src="./img/web-server/web-server-class-diagram-01.png"/>
+        <p>
+          Taking a look at the following class diagram it's clear that the ServerManager class
+          is the centerpiece of the program. This class orchestrates the flow of every request
+          from the epoll loop, handled by the Epoll class, to sending clients the responses
+          obtained from the Server class. This class needed to be instantiated from
+          the main method and accessed later by clean up functions that is why I decided it
+          would be nice to implement a Singleton pattern that provided a unique access point
+          and ensured there would always be a single instance of the ServerManager class.  
+        </p>
+        <img src="./img/web-server/web-server-class-diagram-02.png"/>
+        <p>
+          I would also like to mention that the Epoll class from the previous diagram is a wrapper
+          for the &#60;sys/epoll.h&#62; library. The purpose of this class is to enhance the overall
+          readability of the program by creating a custom interface to access that of the epoll library.
+        </p>
+        <p>
+          Finally, here is a sequence diagram that describes the flow of the program:
+        </p>
+        <img src="./img/web-server/web-server-sequence-diagram-01.png"/>
+        <h2 id="demo">Demo</h2>
+        <p>
+          In the following gif you can see a small demo of the web server. I run the
+          program and it displays how many servers are listening and their ports, then I send
+          an HTTP request and we can see how the server sends a payload with a 200 OK status
+          code in the response.
+        </p>
+        <img src="./img/web-server/web-server-demo.gif"/>
+      </div>
+    </main>
+    <footer>
+			<div class="content-wrapper">
+				<section>
+					<h2>Contact Information</h2>
+					<div class="contact-info-wrapper">
+						<img src="./img/icons/telephone-white.svg" alt="Telephone icon"/>
+						<a target="_blank" href="tel:+34633879330">+34 633 879 330</a>
+					</div>
+					<div class="contact-info-wrapper">
+						<img src="./img/icons/envelope-white.svg" alt="Email icon"/>
+						<a target="_blank" href="mailto:aitorfidalgo@gmail.com">aitorfidalgo@gmail.com</a>
+					</div>
+					<div class="contact-info-wrapper">
+						<img src="./img/icons/linkedin-white.svg" alt="LinkedIn icon"/>
+						<a target="_blank" href="https://linkedin.com/in/aitorfidalgo">linkedin.com/in/aitorfidalgo</a>
+					</div>
+					<div class="contact-info-wrapper">
+						<img src="./img/icons/github-white.svg" alt="GitHub icon"/>
+						<a target="_blank" href="https://github.com/aitorfi">github.com/aitorfi</a>
+					</div>
+				</section>
+				<img class="profile-img" src="./img/profile.jpeg"/>
+			</div>
+		</footer>
+  </body>
+</html>
